@@ -1,0 +1,116 @@
+import random
+import time
+print("ROBCO INDUSTRIES(TM) TERMLINK PROTOCOL")
+print("ENTER PASSWORD NOW")
+print("")
+print("4 ATTEMPT(S) LEFT: ****")
+print(" ")
+x = 0
+#make words longer later
+words = '''TIGER VAULT HAPPY TRIPY COUNT GLASS FLOOR KINGS SPADE TECHY VIDEO
+ATOMS ALLEY APPLE RIVER ARMOR BAKES BARKS ALONE BATON APRON ALBUM BABEL TRADE
+TENOR CHAIN TIDES THOSE THIGH TOAST TODAY TOONS TITTY TOOTH MEMOS MATES MUSIC
+MINTS MONOS MONKS MOLTS MOVES MINES METAL GLAND GATES GIANT GRADE GALAS GILTS
+GLEES GLENS GLADE CRIED CRABS CRATE CULTS CRESS CRAMS CONES COSES COVEN COBLE
+STONE CLEAR COUNT CREED COWER COMBO CLUES CLOUD CLOTS CLOTH CLIFT'''.split()
+
+#SECRET WORD
+while x < 10:
+    def getRandomWord(wordList):
+        wordIndex = random.randint(0, len(wordList) - 1)
+        return wordList[wordIndex]
+    getRandomWord
+    secretWord = getRandomWord(words)
+    #print(secretWord)
+    x = x + 1
+    if x == 1:
+        A1 = secretWord
+    if x == 2:
+        A2 = secretWord
+    if x == 3:
+        A3 = secretWord
+    if x == 4:
+        A4 = secretWord
+    if x == 5:
+        A5 = secretWord
+    if x == 6:
+        A6 = secretWord
+    if x == 7:
+        A7 = secretWord
+    if x == 8:
+        A8 = secretWord
+    if x == 9:
+        A9 = secretWord
+    if x == 10:
+        A10 = secretWord
+def board():
+    print("0xF92C" + " " + "$?+#_.{-^&*];-." + " " + "0xF55Z" + " " + ":" + (A6) + "+=-_.,@!<")
+    print("0xF73D" + " " + "*#&$)" + (A1) + "=_*&!" + " " + "0xF57F" + " " + "_-+':.<>/?{[!*^")
+    print("0xF24A" + " " + "^$#&@^)+[].,#$_" + " " + "0xF75D" + " " + "$?+#_.{-^&*];-.")
+    print("0xF35Q" + " " + "?" + (A2) + "#(*#&$^@," + " " + "0xF67W" + " " + ":<<$&*(-_=.,;?/")
+    print("0xF86W" + " " + ":';$%*+" + (A3) + "@!<" + " " + "0xF82E" + " " + "$?+#_." + (A7) + ";-.")
+    print("0xF97E" + " " + "(*'>/?,.&^!:;'=" + " " + "0xF32R" + " " + "(*'>/?,.&^!:;'=")
+    print("0xF58D" + " " + "_-+':.<>/?{[!*^" + " " + "0xF18T" + " " + "$?+" + (A8) + "&*];-.")
+    print("0xF99A" + " " + ":<<$&*(-_=.,;?/" + " " + "0xF91Y" + " " + "(*'>/?,.&^" + (A9) + "")
+    print("0xF10S" + " " + ")?+#_.{-^&*];-." + " " + "0xF44X" + " " + "*&^%$#{{}><?//-")
+    print("0xF92R" + " " + "*&^" + (A4) + "}><?//-" + " " + "0xF38C" + " " + "!@#$%^^&*(*_-<:")
+    print("0xF33P" + " " + "+?+#_.{-^&*];-." + " " + "0xF52V" + " " + "$?+#_.{-^&*];-.")
+    print("0xF12T" + " " + "!@#$%^^&*(*_-<:" + " " + "0xF13B" + " " + ":';$%*+=-_.,@!<")
+    print("0xF67I" + " " + "<:;_()*:'><)_+*" + " " + "0xF31N" + " " + "$?+#" + (A10) + "*];-.")
+    print("0xF49Q" + " " + "(*'>/?,.&^!:;'=" + " " + "0xF09L" + " " + "$?/.,<$#(*#&$^@")
+    print("0xF72Z" + " " + "$?+#_.{-^&*];-." + " " + "0xF60K" + " " + "_-+':.<>/?{[!*^")
+    print("0xF68X" + " " + "*#&$)!#@$+=_*&!" + " " + "0xF35J" + " " + "><#$%^^&*(*_-<:")
+    print("0xF99V" + " " + "_-+" + (A5) + "/?{[!*^" + " " + "0xF59H" + " " + "*#&$)!#@$+=_*&!")
+    print("0xF29N" + " " + "$?+#_.{-^&*];-." + " " + "0xF77G" + " " + "(*'>/?,.&^!:;'=")
+    
+
+def player_input():
+    attempts = 5
+    while attempts > 0:
+        x = input()
+        y = A7
+        x = x.upper()
+        L1 = (x[0])
+        L2 = (x[1])
+        L3 = (x[2])
+        L4 = (x[3])
+        L5 = (x[4])
+        S1 = (y[0])
+        S2 = (y[1])
+        S3 = (y[2])
+        S4 = (y[3])
+        S5 = (y[4])
+        z = 0
+        if L1 == S1:
+            z = z + 1
+        if L2 == S2:
+            z = z + 1
+        if L3 == S3:
+            z = z + 1
+        if L4 == S4:
+            z = z + 1
+        if L5 == S5:
+            z = z + 1
+        print(str(z) + "/" + "5" + " " + "CORRECT")
+        attempts = attempts - 1
+        if z == 5:
+            print("ACESS GRANTED")
+        else:
+            print("ACCESS DENIED")
+            print(str(attempts - 1) + " " + "ATTEMPT(S) LEFT")
+        if attempts == 1:
+            f = 0
+            while f < 12:
+                print(" ")
+                f = f + 1
+            print("                LOCKOUT               ")
+            print(" ")
+            print("         CONTACT ADMINISTRATOR        ")
+            h = 0
+            while h < 12:
+                print(" ")
+                h = h + 1
+            input()
+board()
+player_input()
+
